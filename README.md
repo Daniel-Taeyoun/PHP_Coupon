@@ -24,6 +24,8 @@
  
  
  c) 쿠폰그룹명(ex.Group_'prefix') 테이블 정보
+ 
+ 
  <img width="471" alt="default" src="https://user-images.githubusercontent.com/30804139/49859043-eb5afd80-fe39-11e8-8b8e-9e8113fd7f67.png">
 
 
