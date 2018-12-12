@@ -1,5 +1,8 @@
 # Comento_Coupon
 
+0. 테스트 사이트
+ - http://34.219.132.193/Comento/Login.html
+
 1. 사용자 정보
  - ID : admin, user1, user2, user3
  - PW : 1234
