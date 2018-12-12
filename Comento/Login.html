@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--
+[로그인 페이지]
+1. 화면이 보인다
+  - 아이디와 비밀번호를 입력시킬 텍스트 박스가 보인다
+
+2. 아이디와 패스워드를 작성한다.
+
+3. 작성 후 로그인 버튼을 누른다.
+  a) 아이디와 비밀번호를 ' Login_Check.php '페이지로 전송한다.
+  b) 데이터 전송 시 POST 방식으로 전송한다.
+    - 이때 데이터 전송 시 ID는 'userid', PW는 'password' 이름으로 전송한다.
+
+
+-->
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Comento</title>
+
+
+  </head>
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="container">
+
+
+<div class="row" style="margin-top:20px">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+
+      <!-- '3번'에 아이디 및 패스워드 데이터 전송하는 코드 -->
+		<form role="form" onsubmit="checkSubmit" action="./Login_Check.php" method="post" >
+			<fieldset>
+				<h2>로그인</h2>
+				<hr class="colorgraph">
+
+        <!-- '3-b)'번 코드 내용 -->
+				<div class="form-group">
+                    <input type="text" name="userid" id="userid" class="form-control input-lg" placeholder="아이디를 입력하세요" required>
+				</div>
+				<div class="form-group">
+                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="비밀번호를 입력하세요" required>
+				</div>
+				<hr class="colorgraph">
+				<div class="row">
+					<div class="form-group">
+                    <input type="submit" class="btn btn-lg btn-success btn-block" value="로그인">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+</div>
